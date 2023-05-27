@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>ETC</title>
+</head>
+
+<body>
+    <header>
+        <div id="cabecalho">
+            <h1 id="title">Index Tecnology</h1>
+            <div>
+                <a href="index.html">
+                    <button class="btn btnHome" id="active">HOME</button>
+                </a>
+                <a href="produtos.html">
+                    <button class="btn btnProdutos">PRODUTOS</button>
+                </a>
+             
+                <button class="btn btnLojas">LOJAS</button>
+                <button class="btn btnCarrinho">CARRINHO</button>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="content">
+            <div class="slides">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+                <div class="slide s1">
+                    <a href="#echoDot"> <img src="img/teste.webp" alt="echo dot - alto falante">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="#inspiron15"> <img src="img/dell_Inspiron15.png" alt="Notebook Dell Inspiron 15"></a>
+                </div>
+                <div class="slide">
+                    <a href="#smartWatch"> <img src="img/smarthWatch0z.png" alt="Relogio Smart"> </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="navigationBar">
+            <label class="barDec" for="slide01"></label>
+            <label class="barDec" for="slide02"></label>
+            <label class="barDec" for="slide03"></label>
+        </div>
+        <div style="    display: flex;
+            flex-direction: column;
+            align-items: center;">
+            <h1>Produtos em Alta</h1>
+            <p>Você também encontrará mais produtos na barra de pesquisa ou na aba produtos</p>
+        </div>
+
+        <div">
+            <h1 id="echoDot">Echo Dot #1C72BD;</h1>
+            </div>
+            <div class="standProdutos">
+                <div>
+                    <img src="img/teste.webp" alt="echo dot - alto falante" style="height:400px">
+                </div>
+                <article id="caixa01">
+                    <p class="text">
+                        Echo Dot (4ª Geração): Smart Speaker com Alexa | <br> Música, informação e Casa Inteligente
+                    </p>
+                </article>
+            </div>
+
+
+
+            <div>
+                <h1 id="inspiron15">Notebook Dell</h1>
+            </div>
+            <div class="standProdutos">
+                <div>
+                    <img src="img/dell_Inspiron15.png" alt="Notebook Dell Inspiron 15">
+                </div>
+                <article id="caixa02">
+                    <p class="text" style="color: white;">
+                        Notebook Dell Inspiron 15 com 11ª geração Intel Core i3, <br> 4GB de RAM e 256GB de
+                        armazenamento.
+                    </p>
+                </article>
+            </div>
+
+            <div>
+                <h1 id="smartWatch">Smart Watch #B2BD09</h1>
+            </div>
+            <div class="standProdutos">
+                <div>
+                    <img style="height: 400px;" src="img/smarthWatch0z.png" alt="Relogio Smart">
+                </div>
+                <article id="caixa03">
+                    <p class="text">
+                        Amazfit 2022 - novos modelos Bip 3, 5ATM,
+
+                        tela de 1,69 polegadas
+                        <br>
+                        Smartwatch inteligente
+
+                        para Android e iOS, na cor preta.
+                    </p>
+                </article>
+            </div>
+    </main>
+    <footer>
+        <p class="footer">© 2023 <a href="none">WanderleyLima</a>. All Rights Reserved.</p>
+    </footer>
+   
+   <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor =>
+        {
+            anchor.addEventListener('click', function (e)
+            {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView
+                    (
+                        {
+                            behavior: 'smooth'
+                        });
+            });
+        });
+    </script>
+</body>
+
+</html>

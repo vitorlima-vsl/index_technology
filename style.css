@@ -1,0 +1,299 @@
+
+/*fontes imagem: https://www.gratispng.com/png-xzqtnw/ notebook dell
+                https://www.imagensempng.com.br/smartwatch-preto-png/ smarthWatch
+*/
+
+
+body
+{
+    background-image: var(--corBackground01);
+    margin: 0;
+}
+
+main
+{
+    height: 96%;
+}
+
+footer
+{
+    height: 4%;
+}
+
+#cabecalho
+{
+    border-bottom: 2px solid rgb(219, 219, 219);
+    display: flex;
+    align-items: center;
+    background-image: var(--corCabecalho01);
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+
+}
+
+/*#3877EB #0B2048 #163671*/
+:root
+{
+    --corCabecalho01: linear-gradient(60deg, #ffffff, #f1f1f1, #f8f8f8);
+    --corBackground01: linear-gradient(60deg, #ffffff, #f1f1f1, #f8f8f8);
+    --corPrincipal01: #1C72BD;
+    --corTexto01: ;
+}
+
+
+a{
+    color: #0A0A09;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+h1
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #0B2048;
+    font-weight: bolder;
+
+}
+div{
+    display: flex;
+}
+h2{
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 9vw;
+    margin: 0.5em 0;
+  }
+p{
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 0 1.4em;
+    letter-spacing: 0.02em; 
+}
+p.text {
+    color: #ffffff;
+  }
+p.footer{
+    color: #0A0A09;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: justify;
+    padding: 0 1.4em;
+    letter-spacing: 0.02em;
+    margin: 0.1%;
+}
+/*rodape do site*/
+footer{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(90deg,#AFAFAF, #a3a3a3, #a1a1a1); 
+    margin: 0;
+}
+div.standProdutos{
+    display: flex; 
+    justify-content:space-around;
+    align-items: center;
+}
+h1#title
+{
+    display: flex;
+}
+
+article{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; 
+    width: auto; 
+    height: auto;
+    box-shadow: 5px 7px 6px rgb(63, 63, 63);
+}
+article#caixa01{
+    background-image: linear-gradient(90deg, #1C72BD,#1764a7, #165e9c);
+ }
+article#caixa02{
+    background-image: linear-gradient(90deg, #BD362F,#bb2f28, #bb271f);
+}
+article#caixa03{
+    background-image: linear-gradient(90deg,#387D24,#387D24, #316b21);
+}
+
+
+/*
+refatorar o codigo e trocar para underline effect
+*/
+/* Style buttons */
+.btn
+{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:after
+{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.btnHome::after{
+ 
+    background-color: #4F99B3;
+}
+.btnProdutos::after{
+     background-color:   #47ac2b;
+}
+.btnLojas::after{
+    color: #ff362c;
+   background-color: #ff362c;
+}
+.btnProdutos:hover{
+    color: #387D24 !important;
+}
+.btnLojas:hover{
+    color: #ff362c !important;
+}
+.btnCarrinho:hover{
+    color: #ebb113 !important;
+}
+.btnCarrinho::after{
+    background-color: #ebb113;
+}
+
+.btn:hover
+{
+    color: var(--corPrincipal01);
+}
+
+.btn:hover:after
+{
+    width: 100%;
+}
+/*home ativo*/
+.btn#active 
+{
+    color: var(--corPrincipal01);
+}
+.btn#active:after 
+{
+    width: 100%;
+}
+/*produtos ativo*/
+.btnProdutos#active
+{
+    color:  #47ac2b;
+}
+
+.btnProdutos#active:after 
+{
+    width: 100%;
+}
+
+
+/* Code For Custom Scrollbar Starts Here */
+/* For firefox */
+.sub-div
+{
+    max-height: 100vh;
+    overflow-y: scroll;
+    /*Thumb color and background color for firefox */
+    scrollbar-color: #00c6ff #242942;
+    overflow-x: none;
+}
+
+/*  ::-webkit- is for chrome */
+::-webkit-scrollbar 
+{
+    width: 0.6em;
+    overflow-x: none;
+}
+
+::-webkit-scrollbar-track 
+{
+    background-color: #a7a7a7;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: rgb(31, 29, 29);
+    border-radius: 0.3em;
+}
+
+
+/*carrosel de imagens*/
+.content{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    top: 70%;
+    left: 55%;
+    transform: translate(-70%,-0%);
+}
+.navigationBar{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.barDec{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #1C72BD;
+    margin: 6px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.barDec:hover{
+    background-color: #1C72BD;
+}
+input{
+ display: none;
+}
+.slides{
+    display: flex;
+    width: 300%;
+    height: 100%;
+   
+}
+.slide{
+    width: 100%;
+    transition: 0.5s;
+}
+.slide img{
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+}
+
+#slide01:checked ~ .s1{
+    margin-left: 0;
+}
+#slide02:checked ~ .s1{
+    margin-left: -60%;
+    margin-right: 10%;
+}
+#slide03:checked ~ .s1{
+    margin-left: -200%;
+
+}
