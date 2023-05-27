@@ -2,7 +2,12 @@
 /*fontes imagem: https://www.gratispng.com/png-xzqtnw/ notebook dell
                 https://www.imagensempng.com.br/smartwatch-preto-png/ smarthWatch
 */
-
+@media (max-width: 600px)
+{
+    .btnHeader{
+        display: block;
+    }
+}
 
 body
 {
