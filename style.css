@@ -2,11 +2,57 @@
 /*fontes imagem: https://www.gratispng.com/png-xzqtnw/ notebook dell
                 https://www.imagensempng.com.br/smartwatch-preto-png/ smarthWatch
 */
-@media (max-width: 600px)
-{
-    .btnHeader{
-        display: block;
+@media (max-width: 700px)
+{  
+    .btn:after
+    {
+         display: none;
     }
+    
+    .responsive_side_bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1#title{
+        font-size: 24px;
+    }
+    /*teste de hamburguer button*/
+      #tab_id{
+        display: none;
+      }
+
+    /*teste de hamburguer button*/
+    .icon{
+        background: rgb(255, 255, 255);
+        color: black;
+        display: block;
+
+    }
+    .standProdutos{
+
+        flex-wrap: wrap;
+    }
+    .tab{
+      display: none;
+    }
+    footer{
+        width: initial;
+    }
+
+}
+
+@media (min-width: 701px){
+    .icon{
+        display: none;
+    }
+    .responsive_side_bar{
+        display: none;
+    }
+}
+/*bem melhor que fazer isso em javaScrip lul*/
+html{
+    scroll-behavior: smooth;
 }
 
 body
@@ -61,6 +107,7 @@ h1
     font-size: 32px;
     color: #0B2048;
     font-weight: bolder;
+    margin: 0.5rem 1rem;
 
 }
 div{
@@ -118,6 +165,7 @@ article{
     justify-content: center; 
     width: auto; 
     height: auto;
+    margin: 10px;
     box-shadow: 5px 7px 6px rgb(63, 63, 63);
 }
 article#caixa01{
@@ -290,7 +338,10 @@ input{
     height: 400px;
     cursor: pointer;
 }
-
+img{
+    width: 400px;
+    height: 400px;
+}
 #slide01:checked ~ .s1{
     margin-left: 0;
 }

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/github.png" type="image/x-icon">
     <title>Index Tecnology</title>
@@ -15,25 +16,39 @@
     <header>
         <div id="cabecalho">
             <h1 id="title">Index Tecnology</h1>
-            <div class="btnHeader">
+            <div class="tab">
                 <a href="index.html">
                     <button class="btn btnHome" id="active">HOME</button>
                 </a>
-                <a href="produtos.html">
+                <a href="#">
                     <button class="btn btnProdutos">PRODUTOS</button>
                 </a>
-             
                 <button class="btn btnLojas">LOJAS</button>
                 <button class="btn btnCarrinho">CARRINHO</button>
+            
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
+        <div class="responsive_side_bar" id="tab_id">
+            <a href="index.html">
+                <button class="btn btnHome" id="active">HOME</button>
+            </a>
+            <a href="#">
+                <button class="btn btnProdutos">PRODUTOS</button>
+            </a>
+            <button class="btn btnLojas">LOJAS</button>
+            <button class="btn btnCarrinho">CARRINHO</button>
+        </div>
+   
     </header>
 
 
     <main>
 
         <div class="content">
-            <div class="slides">
+            <div class="slides responsive_slides">
                 <input type="radio" name="slide" id="slide01" checked>
                 <input type="radio" name="slide" id="slide02">
                 <input type="radio" name="slide" id="slide03">
@@ -71,7 +86,7 @@
                     <img src="img/teste.webp" alt="echo dot - alto falante" style="height:400px">
                 </div>
                 <article id="caixa01">
-                    <p class="text">
+                    <p class="text responsive_text">
                         Echo Dot (4ª Geração): Smart Speaker com Alexa | <br> Música, informação e Casa Inteligente
                     </p>
                 </article>
@@ -87,7 +102,7 @@
                     <img src="img/dell_Inspiron15.png" alt="Notebook Dell Inspiron 15">
                 </div>
                 <article id="caixa02">
-                    <p class="text" style="color: white;">
+                    <p class="text responsive_text" style="color: white;">
                         Notebook Dell Inspiron 15 com 11ª geração Intel Core i3, <br> 4GB de RAM e 256GB de
                         armazenamento.
                     </p>
@@ -98,11 +113,11 @@
                 <h1 id="smartWatch">Smart Watch</h1>
             </div>
             <div class="standProdutos">
-                <div>
+                <div class="">
                     <img style="height: 400px;" src="img/smarthWatch0z.png" alt="Relogio Smart">
                 </div>
                 <article id="caixa03">
-                    <p class="text">
+                    <p class="text responsive_text">
                         Amazfit 2022 - novos modelos Bip 3, 5ATM,
 
                         tela de 1,69 polegadas
@@ -117,21 +132,17 @@
     <footer>
         <p class="footer">© 2023 <a href="none">WanderleyLima</a>. All Rights Reserved.</p>
     </footer>
-   
-   <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor =>
-        {
-            anchor.addEventListener('click', function (e)
-            {
-                e.preventDefault();
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView
-                    (
-                        {
-                            behavior: 'smooth'
-                        });
-            });
-        });
+    <script>
+        function myFunction() {
+            var x = document.getElementById("tab_id");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+
     </script>
 </body>
 
