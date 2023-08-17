@@ -56,7 +56,7 @@
         display: none;
     }
 }
-/*bem melhor que fazer isso em javaScrip lul*/
+/*bem melhor que fazer isso em javaScript lul*/
 html{
     scroll-behavior: smooth;
 }
@@ -340,8 +340,6 @@ input{
     transition: 0.5s;
 }
 .slide img{
-    width: 400px;
-    height: 400px;
     cursor: pointer;
 }
 img{
