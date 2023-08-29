@@ -2,7 +2,7 @@
 /*fontes imagem: https://www.gratispng.com/png-xzqtnw/ notebook dell
                 https://www.imagensempng.com.br/smartwatch-preto-png/ smarthWatch
 */
-@media (max-width: 700px)
+@media (max-width: 767.98px)
 {  
 
     .btn{
@@ -48,13 +48,14 @@
 
 }
 
-@media (min-width: 701px){
+@media (min-width: 768px){
     .icon{
         display: none;
     }
     .responsive_side_bar{
         display: none;
     }
+    
 }
 /*bem melhor que fazer isso em javaScript lul*/
 html{

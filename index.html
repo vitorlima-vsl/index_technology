@@ -16,9 +16,10 @@
 </head>
 
 <body>
-    <header>
-        <div id="cabecalho">
-            <h1 id="title">Index Tecnology</h1>
+<header>
+        <div class="d-flex align-items-center justify-content-between border-top-0" style="background-image: var(--corCabecalho01);  border-bottom: 2px solid rgb(219, 219, 219);">
+                <h1 id="title">Index Tecnology</h1>
+
             <div class="tab">
                 <a href="index.html">
                     <button class="btn btnHome" id="active">HOME</button>
@@ -28,12 +29,12 @@
                 </a>
                 <button class="btn btnLojas">LOJAS</button>
                 <button class="btn btnCarrinho">CARRINHO</button>
-            
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="hamburguer()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+
         <div class="responsive_side_bar" id="tab_id">
             <a href="index.html">
                 <button class="btn btnHome" id="active">HOME</button>
@@ -45,18 +46,18 @@
             <button class="btn btnCarrinho">CARRINHO</button>
         </div>
    
-    </header>
+</header>
 
 
     <main>
 
         <div class="content">
-            <div class="slides responsive_slides">
+            <div class="slides ">
                 <input type="radio" name="slide" id="slide01" checked>
                 <input type="radio" name="slide" id="slide02">
                 <input type="radio" name="slide" id="slide03">
                 <div class="slide s1">
-                    <a href="#echoDot"> <img src="img/teste.webp" alt="echo dot - alto falante">
+                    <a href="#echoDot"> <img src="img/teste.webp"  alt="echo dot - alto falante">
                     </a>
                 </div>
                 <div class="slide">
@@ -90,7 +91,7 @@
             </div>
             <div class="standProdutos">
                 <div>
-                    <img src="img/teste.webp" alt="echo dot - alto falante" style="height:400px">
+                    <img src="img/teste.webp" class="img-fluid" alt="echo dot - alto falante" >
                 </div>
                 <article id="caixa01">
                     <p class="text responsive_text my-2">
@@ -106,7 +107,7 @@
             </div>
             <div class="standProdutos">
                 <div>
-                    <img src="img/dell_Inspiron15.png" alt="Notebook Dell Inspiron 15">
+                    <img src="img/dell_Inspiron15.png" class="img-fluid" alt="Notebook Dell Inspiron 15">
                 </div>
                 <article id="caixa02">
                     <p class="text responsive_text my-2" style="color: white;">
@@ -121,7 +122,7 @@
             </div>
             <div class="standProdutos">
                 <div class="">
-                    <img style="height: 400px;" src="img/dell_alieware_monitor.png" alt="Relogio Smart">
+                    <img style="height: 400px;" src="img/dell_alieware_monitor.png" class="img-fluid" alt="Relogio Smart">
                 </div>
                 <article id="caixa03">
                     <p class="text responsive_text my-2">
@@ -138,15 +139,16 @@
     </footer>
 
     <script>
-        function myFunction() {
+        function hamburguer() {
             var x = document.getElementById("tab_id");
             if (x.style.display === "flex") {
                 x.style.display = "none";
-            } else {
+            }
+            else {
                 x.style.display = "flex";
             }
         }
-
+    
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
