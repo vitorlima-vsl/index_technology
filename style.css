@@ -2,6 +2,14 @@
 /*fontes imagem: https://www.gratispng.com/png-xzqtnw/ notebook dell
                 https://www.imagensempng.com.br/smartwatch-preto-png/ smarthWatch
 */
+
+@media(max-width: 1050px){
+    .btn:after
+    {
+        bottom: -7.6px !important;
+    }
+}
+
 @media (max-width: 767.98px)
 {  
 
@@ -9,12 +17,6 @@
         color: white;
         background-color: white;
     }
-
-    .btn:after
-    {
-         display: none;
-    }
-    
     .responsive_side_bar{
         display: flex;
         flex-direction: column;
@@ -54,6 +56,16 @@
     }
     .responsive_side_bar{
         display: none;
+    }
+    .btn:after
+    {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 0;
+        left: 0;
+        bottom: -10.6px;
+        transition: 0.5s;
     }
     
 }
@@ -204,19 +216,9 @@ refatorar o codigo e trocar para underline effect
     cursor: pointer;
 }
 
-.btn:after
-{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
+
 .btnHome::after{
- 
-    background-color: #4F99B3;
+ background-color: #4F99B3;
 }
 .btnProdutos::after{
      background-color:   #47ac2b;
