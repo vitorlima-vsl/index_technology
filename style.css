@@ -3,16 +3,24 @@
                 https://www.imagensempng.com.br/smartwatch-preto-png/ smarthWatch
 */
 
-@media(max-width: 1050px){
+@media(max-width: 1050px)
+{
     .btn:after
     {
         bottom: -7.6px !important;
+    }
+    .content{
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .imgCarrousel{
+        width: 300px !important;
+        height: 300px !important;
     }
 }
 
 @media (max-width: 767.98px)
 {  
-
     .btn{
         color: white;
         background-color: white;
@@ -50,7 +58,20 @@
 
 }
 
-@media (min-width: 768px){
+@media(max-width: 576px)
+{
+    .content{
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .imgCarrousel{
+        width: 200px !important;
+        height: 200px !important;
+    }
+}
+
+@media (min-width: 768px)
+{
     .icon{
         display: none;
     }
@@ -349,9 +370,10 @@ img{
     width: 400px;
     height: 400px;
 }
+/*
 #slide01:checked ~ .s1{
     margin-left: 0;
-}
+}*/
 #slide02:checked ~ .s1{
     margin-left: -60%;
     margin-right: 10%;
