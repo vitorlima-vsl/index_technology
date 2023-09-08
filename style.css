@@ -291,18 +291,17 @@ refatorar o codigo e trocar para underline effect
 }
 
 
-/* Code For Custom Scrollbar Starts Here */
-/* For firefox */
+/* para o firefox */
 .sub-div
 {
     max-height: 100vh;
     overflow-y: scroll;
-    /*Thumb color and background color for firefox */
-    scrollbar-color: #00c6ff #242942;
+    /*cor da barrinha e cor do fundo*/
+    scrollbar-color: #a7a7a7 rgb(31, 29, 29);
     overflow-x: none;
 }
 
-/*  ::-webkit- is for chrome */
+/*  ::-webkit- serve pro chrome */
 ::-webkit-scrollbar 
 {
     width: 0.6em;
