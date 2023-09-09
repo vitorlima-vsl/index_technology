@@ -7,7 +7,7 @@
 {
 
     .responsive_text{
-        font-size: 16px;
+        font-size: 14px;
     }
     .btn:after
     {
@@ -26,7 +26,8 @@
 @media (max-width: 767.98px)
 {  
     h1.p_alta{
-        width: 100%;
+        font-size: 18px;
+        margin: 0;
     }
     .btn{
         color: white;
@@ -41,7 +42,7 @@
         font-size: 24px;
     }
     .responsive_text{
-        font-size: 14px;
+        font-size: 12px;
     }
     /*teste de hamburguer button*/
       #tab_id{
@@ -173,7 +174,7 @@ h2{
 p{
     color: #000000;
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.5em;
     text-align: justify;
