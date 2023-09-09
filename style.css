@@ -5,6 +5,10 @@
 
 @media(max-width: 1050px)
 {
+
+    .responsive_text{
+        font-size: 16px;
+    }
     .btn:after
     {
         bottom: -7.6px !important;
@@ -21,6 +25,9 @@
 
 @media (max-width: 767.98px)
 {  
+    h1.p_alta{
+        width: 100%;
+    }
     .btn{
         color: white;
         background-color: white;
@@ -32,6 +39,9 @@
     }
     h1#title{
         font-size: 24px;
+    }
+    .responsive_text{
+        font-size: 14px;
     }
     /*teste de hamburguer button*/
       #tab_id{
@@ -194,10 +204,7 @@ div.standProdutos{
     justify-content:space-around;
     align-items: center;
 }
-h1#title
-{
-    display: flex;
-}
+
 
 article{
     border-radius: 10px;
