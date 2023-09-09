@@ -74,13 +74,18 @@
     .content{
         width: 200px !important;
         height: 200px !important;
+        left: 60% !important;
     }
     .imgCarrousel{
         width: 200px !important;
         height: 200px !important;
     }
 }
-
+@media(max-width: 376px){
+    .content{
+        left: 62.5% !important;
+    }
+}
 @media (min-width: 768px)
 {
     .icon{
