@@ -57,7 +57,6 @@
 
     }
     .standProdutos{
-
         flex-wrap: wrap;
     }
     .tab{
@@ -88,6 +87,14 @@
 }
 @media (min-width: 768px)
 {
+
+    .img_article{
+        width: 50%; margin-left: 10%;
+    }
+    article{
+        width: 50% !important;
+        margin: 10% !important;
+    }
     .icon{
         display: none;
     }
