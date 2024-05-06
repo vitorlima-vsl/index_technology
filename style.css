@@ -197,7 +197,7 @@ p.text {
     color: #ffffff;
   }
 p.footer{
-    color: #0A0A09;
+    color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     text-align: justify;
@@ -209,7 +209,7 @@ p.footer{
 footer{
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(90deg,#AFAFAF, #a3a3a3, #a1a1a1); 
+    background-image: linear-gradient(90deg,#0c0c0c, #0c0c0c, #0c0c0c); 
     margin: 0;
 }
 div.standProdutos{
